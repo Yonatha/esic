@@ -1,0 +1,126 @@
+table.dataTable tr {
+	/*white-space: nowrap;*/
+	padding: 0px;
+}
+
+table.dataTable thead tr {
+	cursor: pointer;
+}
+
+table.dataTable thead tr th.sorting_asc span.separator {background:#f9e62a url("../css/themes/default/img/icon_arrow_up.png") no-repeat center;}
+table.dataTable thead tr th.sorting_desc span.separator {background:#f9e62a url("../css/themes/default/img/icon_arrow_down.png") no-repeat center;}
+
+div.dataTables_wrapper {
+	/*width: 100% !Important;*/
+}
+
+div.dataTables_wrapper div.bottom {
+	background: #1257aa;
+	color: #fff;
+	line-height: 50px;
+	height: 50px;
+	width: inherit;
+}
+
+div.dataTables_wrapper div.paginacao {
+	float: left;
+	color: #fff;
+	margin-top: 10px;
+	padding-left: 20px;
+	line-height: 50px;
+	margin-right: 10px;
+}
+div.dataTables_wrapper div.paginacao a {
+	color: #fff;
+}
+div.dataTables_wrapper div.informacao {
+	float: left;
+	color: #fff;
+	line-height: 50px;
+	margin-right: 10px;
+}
+div.dataTables_wrapper div.qtdLinhas {
+	float: left;
+	color: #fff;
+	line-height: 50px;
+	margin-right: 10px;
+	padding-top: 2px;
+}
+div.dataTables_wrapper div.qtdLinhas select {
+	position: relative;
+	top: 3px;
+	width: 80px;
+}
+div.dataTables_filter {
+	visibility: hidden;
+}
+
+table.dataTable tfoot {
+	text-align: center;
+}
+.search_init {
+	width: 80%;
+	text-align: left;
+}
+
+.dataTables_paginate a {
+	background: none;
+	color: #fff;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border-left-width: 1px;
+
+	float: left;
+	padding: 4px 12px;
+	line-height: 20px;
+	text-decoration: none;
+	border: 1px solid white;/*#b2e4f0;*/
+	cursor: pointer;
+}
+.dataTables_paginate a:hover, div.dataTables_wrapper div.paginacao a:hover  {
+	color: #1257aa;
+	background: #fff;
+}
+div.dataTables_wrapper div.paginacao .dataTables_paginate a.paginate_active {
+	color: #1257aa;
+	background: #F9E62A; /*#EFF9FC;*/
+}
+
+.dataTables_paginate a.paginate_button_disabled:hover, div.dataTables_wrapper div.paginacao a.paginate_button_disabled:hover {
+	cursor: default;
+	background: none;
+	color: #fff;
+}
+.dataTables_processing {
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    color: #999999;
+    font-size: 14px;
+    height: 60px;
+    width: 200px;
+    left: 50%;
+    top: 50%;
+    padding: 14px 0 2px;
+    position: fixed;
+    margin-top: -30px;
+    margin-left: -100px;
+    text-align: center;
+}
+
+table.dataTable tbody tr td.yellow {
+	background-color: #fcf8e3;
+	color: #4c4c4c;
+}
+table.dataTable tbody tr td.red {
+	background-color: #f2dede;
+	color: #4c4c4c;
+}
+table.dataTable tbody tr td.green {
+	background-color: #dff0d8;
+	color: #4c4c4c;
+}
+table.table-report tbody tr td.dataTables_empty {
+	background-color: #f2dede;
+	color: #b94a48;
+}

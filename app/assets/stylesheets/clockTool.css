@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700);
+
+.reality, .glass .panel {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.reality {
+    animation: blur 1s 2s both;
+}
+
+.glass {
+    animation: 1s ease 2s normal both 1 running unblur;
+    background: rgba(0, 0, 0, 0) url("opacity.png") repeat scroll 0 0;
+    border-radius: 0.25rem;
+    float: right;
+    height: 15rem;
+    margin: 1.5rem;
+    position: relative;
+    width: 24rem;
+    color: #fff !important;
+}
+
+.glass a {
+    color: #ffffff !important;
+    position: relative;
+    z-index: 999;
+}
+
+.glass a:hover {
+    text-decoration: none;
+}
+
+.glass .panel {
+    background: transparent;
+    user-select: none;
+    padding: 1.5rem 2rem;
+    overflow: hidden;
+}
+
+.timeframe {
+    transition: opacity .5s;
+    z-index: 100;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+}
+
+.glass time {
+    font-size: 6rem;
+    line-height: 8rem;
+}
+
+.glass .timeframe h2:before,
+.glass .timeframe h2:after {
+    content: "\2022";
+    color: rgba(200, 200, 200, .8);
+    padding: 0 .2rem;
+}
+
+.glass input:checked ~ .timeframe {
+    opacity: 0;
+}
+
+.okglass {
+    opacity: 0;
+    transition: .2s;
+}
+
+.okglass h2 {
+    transform: translateY(12rem);
+    opacity: 0;
+    transition: .8s;
+}
+
+aside {
+    float: left;
+    height: 12rem;
+    padding-right: .8rem;
+}
+
+.glass input:checked ~ .okglass {
+    opacity: 1;
+}
+
+.glass input:checked ~ .okglass h2 {
+    opacity: 1;
+    transform: none;
+}
+
+.okglass h2:nth-child(2) {
+    transition-delay: .05s;
+}
+
+.okglass h2:nth-child(3) {
+    transition-delay: .1s;
+}
+
+.okglass h2:nth-child(4) {
+    transition-delay: .15s;
+}
+
+.okglass h2:nth-child(5) {
+    transition-delay: .2s;
+}
+
+.okglass h2:nth-child(6) {
+    transition-delay: .25s;
+}
+
+@keyframes unblur {
+    to {
+        -webkit-filter: blur(0);
+    }
+}
+
+@keyframes blur {
+    to {
+        -webkit-filter: blur(5px);
+    }
+}
+
+.glass input {
+    display: none;
+}

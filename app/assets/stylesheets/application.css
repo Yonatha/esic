@@ -1,0 +1,1249 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require toastr
+ *= require jquery-ui
+ */
+@import "toastr";
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    color: #333333;
+    font-family: arial;
+    font-size: 12px;
+    height: 100%;
+}
+body a.botao {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    height: 11px;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+body a.botao img {
+    border: medium none;
+    margin-right: 5px;
+    vertical-align: -4px;
+}
+body a.botao.tipo1 {
+    background-color: #498af2;
+    color: #ffffff;
+}
+body a.botao.tipo1:hover {
+    background-color: #4681db;
+}
+body a.botao.tipo12:hover {
+    background-color: #498af2;
+    color: #ffffff;
+}
+body a.botao.tipo2 {
+    background-color: #d84a38;
+    color: #ffffff;
+}
+body a.botao.tipo2:hover {
+    background-color: #c44133;
+}
+body a.botao.tipo21:hover {
+    background-color: #d84a38;
+    color: #ffffff;
+}
+body h1 {
+    color: #333333;
+    cursor: default;
+    font-size: 30px;
+}
+body h1 span {
+    color: #777777;
+    display: block;
+    font-size: 12px;
+    margin-top: -5px;
+}
+#menuSuperior {
+    background-color: #01a8d9;
+    color: #fff;
+    font-family: Arial;
+    font-size: 12px;
+    height: 23px;
+    padding: 7px 10px 0;
+}
+#menuSuperior ul.opcoes {
+    float: right;
+}
+#menuSuperior ul.opcoes li {
+    border-right: 1px solid #ffffff;
+    display: inline;
+    float: left;
+    height: 11px;
+    margin-top: 2px;
+    padding: 0 5px;
+}
+#menuSuperior ul.opcoes li.ult {
+    border-right: medium none;
+}
+#menuSuperior ul.opcoes li a {
+    color: #ffffff;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -2px;
+    text-decoration: none;
+}
+#menuSuperior ul.opcoes li a:hover {
+    text-decoration: underline;
+}
+#topo {
+    background: #01a8d9 none repeat scroll 0 0;
+    border-bottom: 2px solid #ffd400;
+    height: 38px;
+    padding: 15px 20px 0;
+}
+#topo h1 {
+    background: rgba(0, 0, 0, 0) url("images/logo_unipe_mini.png") no-repeat scroll -19px -8px;
+    height: 48px;
+    left: 10px;
+    position: absolute;
+    top: 2px;
+    width: 116px;
+}
+#topo h1 a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#topo h2 {
+    color: #fff;
+    display: none;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 26px;
+    left: 118px;
+    position: absolute;
+    top: 11px;
+}
+#topo #acessoRapido {
+    border-left: 1px solid #cccccc;
+    display: block;
+    height: 55px;
+    margin-left: 285px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+#topo #acessoRapido span.titulo {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+#topo #acessoRapido ul li {
+    display: inline;
+}
+#topo ul {
+    background: #004382 none repeat scroll 0 0;
+    height: 17px;
+    padding: 5px 5px 5px 8px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+#topo ul li a, #topo ul li {
+    color: #fff;
+    list-style: outside none none;
+    padding-right: 5px;
+}
+#topo ul li {
+    float: left;
+    margin-right: 2px;
+}
+#topo ul li a {
+    text-decoration: none;
+}
+#topo .logout {
+    border-right: 1px solid #fff;
+    font-weight: bold;
+}
+#topo .ajuda {
+    background: rgba(0, 0, 0, 0) url("images/icones/ajuda.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 22px;
+    position: relative;
+    right: -6px;
+    top: -4px;
+    width: 22px;
+}
+#content {
+    padding: 20px;
+}
+#content a.newWindow {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    float: left;
+    font-family: "Roboto Condensed",sans-serif;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding: 10px;
+    text-decoration: none;
+    width: 240px;
+}
+#content a.newWindow:hover {
+    background-color: #eff4fc;
+}
+#content a.newWindow img {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #cccccc -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-style: none solid none none;
+    border-width: medium 1px medium medium;
+    float: left;
+    height: 50px;
+    margin-right: 10px;
+    padding-right: 10px;
+    width: 50px;
+}
+#content a.newWindow span {
+    color: #333333;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+    width: 67%;
+}
+#content a.newWindow span.legenda {
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 0;
+}
+#content fieldset.grupoModulos {
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    margin-bottom: 18px;
+    padding: 15px 0 5px 15px;
+}
+#content fieldset.grupoModulos legend {
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+div.conteudo {
+    height: 100%;
+    overflow: hidden !important;
+    position: relative;
+    width: 100%;
+}
+div.box {
+    bottom: 0;
+    left: 150px;
+    padding-left: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+div.box form.cadastro fieldset {
+    border: 1px dashed #cccccc;
+    padding: 10px;
+}
+div.box form.cadastro fieldset > span {
+    display: block;
+}
+div.box form.cadastro fieldset > div {
+    float: left;
+    margin-bottom: 7px;
+    min-height: 22px;
+}
+div.box form.cadastro fieldset div .cke_skin_kama {
+    float: left;
+}
+div.box form.cadastro fieldset div label {
+    background-color: #f5f5f5;
+    display: block;
+    float: left;
+    font-size: 13px;
+    padding: 4px;
+    width: 150px;
+}
+div.box form.cadastro fieldset div label.simples {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    display: inline;
+    float: none;
+    font-size: 13px;
+    padding: 0;
+    width: auto;
+}
+div.box form.cadastro fieldset div input[type="text"] {
+    background-color: #f7fafc;
+    border: 1px solid #cccccc;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    margin-left: 7px;
+    padding-top: 2px;
+}
+div.box form.cadastro fieldset div input[type="password"] {
+    background-color: #f7fafc;
+    border: 1px solid #cccccc;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    padding-top: 2px;
+}
+div.box form.cadastro fieldset div select {
+    background-color: #f7fafc;
+    border: medium none;
+    font-size: 14px;
+    height: 25px;
+    padding-top: 2px;
+    width: 350px;
+}
+div.box form.cadastro fieldset p.erro {
+    color: #ea2e2e;
+    font-size: 10px;
+    margin-left: 155px;
+    padding: 1px 2px;
+}
+div.box form.cadastro input[type="submit"] {
+    float: right;
+    margin-top: 10px;
+    padding: 5px;
+}
+div.box .filtroListagem {
+    height: 85px;
+}
+div.box form.acoesMassa {
+    height: 65px;
+    margin-top: 5px;
+    padding: 0;
+}
+div.box .formliste {
+    position: relative;
+}
+div.box .formliste fieldset {
+    background-color: #eff1f2;
+    border: 1px solid #cccccc;
+    bottom: 0;
+    float: left;
+    left: 0;
+    padding: 10px;
+    right: 0;
+    width: 100%;
+}
+div.box .formliste fieldset legend {
+    background-color: #ffffff;
+    font-family: "Roboto Condensed",sans-serif;
+    margin-left: 10px;
+}
+div.box .formliste div {
+    float: left;
+    margin-bottom: 7px;
+    margin-right: 7px;
+}
+div.box .formliste input[type="submit"] {
+    bottom: 10px;
+    cursor: pointer;
+    height: 27px;
+    position: absolute;
+    right: 10px;
+    width: 45px;
+}
+div.box form.acoesMassa label label {
+    font-size: 10px;
+}
+div.box form.acoesMassa div {
+    margin-top: -10px;
+}
+div.box form.acoesMassa select {
+    font-size: 13px;
+    height: 22px;
+    margin-top: -2px;
+    width: 180px;
+}
+div.box form.acoesMassa div.botoes {
+    clear: both;
+    float: left;
+    margin-right: 5px;
+    margin-top: 4px;
+    position: relative;
+}
+div.box form.acoesMassa div.botoes a input[type="checkbox"] {
+    margin-right: 4px;
+    vertical-align: -2px;
+}
+div.box div.contListagem {
+    border: 1px solid #cccccc;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 731px;
+}
+div.box div.contListagem a.paginacao {
+    background-color: #e1e8ed;
+    border-top: 2px solid #c9e4ed;
+    display: block;
+    font-size: 11px;
+    height: 19px;
+    padding-top: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+div.box div.contListagem a.paginacao:hover {
+    background-color: #e8eef2;
+}
+div.box table.lista {
+    width: 100%;
+}
+div.box table.lista tr.acoes {
+    display: none;
+    margin-top: -57px;
+    position: absolute;
+    right: 10px;
+}
+div.box table.lista thead th {
+    background-color: #eff1f2;
+    font-family: "Roboto Condensed",sans-serif;
+    padding: 5px;
+}
+div.box table.lista tr.acoes td {
+    background-color: #ffffff !important;
+    border: 1px solid #cccccc;
+    height: 22px !important;
+    padding-bottom: 3px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+div.box table.lista tr.acoes td h5 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+div.box table.lista a img {
+    border: medium none;
+}
+div.box table.lista tr.acoes td img {
+    border: medium none;
+    margin-right: 3px;
+}
+div.box table.lista tr td {
+    background-color: #f7fafc;
+    border-bottom: 1px solid #f7fafc;
+    cursor: default;
+    font-size: 13px;
+    height: 20px;
+    padding: 5px 10px;
+}
+div.box table.lista tr.impar td {
+    background-color: #f7f9fb;
+}
+div.box table.lista tr.alt td {
+    background-color: #eff1f2;
+    border-bottom: 1px solid #eff1f2;
+}
+div.box table.lista tr.alt2 td {
+    background-color: #d4eac7 !important;
+}
+div.box table.lista tr.marcado td {
+    background-color: #c9e4ed !important;
+    border-bottom: 1px solid #ffffff;
+}
+div.box table.lista tr td.check {
+    padding: 0 0 0 10px;
+    text-align: center;
+}
+div.box table.lista tr td.check input {
+    float: left;
+    margin-top: 1px;
+}
+div.box table.lista tr td.check a {
+    float: left;
+    margin-left: 4px;
+}
+div.box table.lista tr td.check a img {
+    border: medium none;
+}
+div.menuModulo {
+    border-right: 1px solid #cccccc;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 150px;
+}
+div.menuModulo li {
+    font-family: "Roboto Condensed",sans-serif;
+    list-style: outside none none;
+}
+div.menuModulo li a {
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    float: left;
+    font-size: 13px;
+    height: 25px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-decoration: none;
+    width: 130px;
+}
+div.menuModulo li a img {
+    border: medium none;
+    margin-right: 3px;
+    vertical-align: -3px;
+}
+div.menuModulo li a:hover {
+    background-color: #dbe8fc;
+}
+div.menuModulo li a.ativo {
+    background-color: #ffffff;
+    border-right: 1px solid #ffffff;
+    width: 139px;
+}
+div.loading {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 50;
+}
+div.loading h5 {
+    left: 50%;
+    margin-left: -220px;
+    margin-top: -50px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 400px;
+}
+div.loading .backgroundLoading {
+    background-color: #ffffff;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+div.loading h5 img {
+    margin-bottom: 7px;
+}
+#formLogin {
+    height: 311px;
+    left: 45%;
+    margin-left: -125px;
+    margin-top: -75px;
+    padding: 15px;
+    position: absolute;
+    top: 33%;
+    width: 314px;
+}
+#formLogin h3 {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    text-align: center;
+}
+#formLogin div {
+    margin-bottom: 8px;
+}
+#formLogin label {
+    float: left;
+    margin-right: 8px;
+    margin-top: 3px;
+    text-align: left;
+    width: 100%;
+}
+#formLogin input[type="text"], #formLogin input[type="password"] {
+    border: 1px solid #cccccc;
+    height: 22px;
+    padding: 6px;
+    width: 96%;
+}
+#formLogin input[type="submit"] {
+    background: #011f39 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    float: right;
+    margin-right: -4px;
+    padding: 7px;
+    width: 117px;
+}
+#formLogin .errorMessage {
+    color: red;
+}
+#purr-container {
+    margin-right: 15px;
+    margin-top: 35px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999999;
+}
+.notice {
+    cursor: pointer;
+    position: relative;
+}
+.notice-body {
+    color: #333333;
+    margin-bottom: 7px;
+}
+.notice-body span {
+    background-color: #333333;
+    border: 1px solid #333333;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+.notice-body.ok span {
+    background-color: #549341;
+}
+.notice-body.erro span {
+    background-color: #9b2626;
+}
+.notice-body.alerta span {
+    background-color: #f9f92c;
+}
+.notice-body.alerta p {
+    color: #333333;
+}
+.notice-body img {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 50px;
+}
+.notice-body h3 {
+    font-size: 1.1em;
+    margin: 0;
+}
+.notice-body p {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold !important;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+    z-index: 5;
+}
+.notice-bottom {
+}
+#windowModal {
+    background: #fff none repeat scroll 0 0;
+    display: none;
+    height: 549.6px;
+    left: 17%;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 5%;
+    width: auto;
+    z-index: 1013;
+}
+.exportarExcel {
+    position: relative;
+    top: 15px;
+}
+#btnFecharJanela {
+    background: #01a8d9 none repeat scroll 0 0;
+    color: #fff;
+    float: right;
+    height: 17px;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+}
+.usuarioClinicas {
+    left: 166px;
+    position: relative;
+}
+.usuarioPerfis {
+    height: 23px;
+    left: 184px;
+    margin: 0;
+    position: absolute;
+    width: 376px;
+}
+label span {
+    color: red;
+}
+h3.frmAnunciado {
+    clear: both;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 33px;
+    padding-top: 10px;
+    width: 100%;
+}
+label.dtCadastro {
+    font-size: 11px !important;
+    left: 311px;
+    position: relative;
+    top: 0;
+}
+.msgform {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    border-radius: 4px;
+    color: #b94a48;
+    display: none;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 5px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    width: 94%;
+}
+#paciente-form #CONVENIO {
+    width: 702px;
+}
+#paciente-form #COMPLIDENTIDADE {
+    width: 177px;
+}
+#paciente-form #ETNIA {
+    width: 696px;
+}
+#paciente-form #COMPLIDENTIDADE {
+    width: 177px;
+}
+#paciente-form #DTEMISSAOIDENT {
+    width: 100px;
+}
+#paciente-form #CERTIDAO_FOLHA {
+    width: 101px;
+}
+#paciente-form #SERIECARTTRAB {
+    width: 143px;
+}
+#paciente-form #RUA {
+    width: 302px;
+}
+.recaptcha {
+    margin: 10px 0 0;
+    position: relative;
+}
+.recaptcha label {
+    width: 100%;
+}
+.rowCPF {
+    position: relative;
+}
+.rowCPF span {
+    color: red;
+    font-size: 12px;
+    left: 151px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 25px;
+}
+#btnVoltar {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #000000;
+    display: block;
+    font-size: 20px;
+    height: 26px;
+    left: 40%;
+    margin-left: 0;
+    margin-top: 22px;
+    padding: 9px;
+    position: absolute;
+    text-decoration: none;
+    top: 33px;
+    width: 85px;
+}
+#frmConsultar {
+    height: 69px;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    top: 0;
+    width: 359px;
+}
+#frmConsultar label {
+    float: left;
+    font-size: 16px;
+    margin-bottom: 7px;
+    width: 100%;
+}
+#frmConsultar #cpf {
+    float: left;
+    font-size: 21px;
+    padding: 5px;
+}
+#frmConsultar #btnConsultar {
+    float: left;
+    height: 40px;
+    margin-left: 6px;
+    margin-top: 0;
+    width: 57px;
+}
+.direita {
+    float: right !important;
+    margin-right: 16px;
+    margin-top: 15px;
+    margin-left: 7px;
+}
+input:invalid {
+}
+:invalid {
+    box-shadow: none;
+}
+:-moz-submit-invalid {
+    box-shadow: none;
+}
+:-moz-ui-invalid {
+    box-shadow: none;
+}
+#listaConvenios table.lista tr:nth-child(2n) {
+    background: #f1f1f1 none repeat scroll 0 0;
+}
+#listaConvenios table.lista tr:nth-child(2n) {
+    background: #f4f4f4 none repeat scroll 0 0;
+}
+#listaConvenios table.lista td:first-child {
+    width: auto;
+}
+#listaConvenios table.lista td:first-child + td {
+    width: 100%;
+}
+#listaConvenios table.lista td:last-child {
+    cursor: pointer;
+}
+#listaConvenios table.lista td:first-child, #listaConvenios table.lista td:first-child + td, #listaConvenios table.lista td:last-child {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    cursor: pointer;
+}
+#listaClinicas table.lista tr:nth-child(2n) {
+    background: #f4f4f4 none repeat scroll 0 0;
+    cursor: pointer;
+}
+#listaClinicas table.lista td:first-child, #listaClinicas table.lista td:first-child + td, #listaClinicas table.lista td:last-child {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    cursor: pointer;
+}
+#menuPrincipal {
+    background: #fff none repeat scroll 0 0;
+}
+#topo, #topo a, #menuPrincipal a {
+    font-family: "Open Sans",sans-serif;
+    font-size: 12px;
+}
+.ON {
+    background-color: #5cb85c;
+    border-radius: 0.25em;
+    color: #fff;
+    display: inline;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.2em 0.6em 0.3em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.VERIFICANDO, .NAO_VERIFICADO {
+    background: #f0ad4e none repeat scroll 0 0;
+    border-radius: 0.25em;
+    color: #fff;
+    display: inline;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.2em 0.6em 0.3em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.OFF {
+    background: #d9534f none repeat scroll 0 0;
+    border-radius: 0.25em;
+    color: #fff;
+    display: inline;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.2em 0.6em 0.3em;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+#maskOpacidade, #DialogPopUp {
+    display: none;
+}
+#maskOpacidade {
+    background: #000 none repeat scroll 0 0;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    z-index: 998;
+}
+#DialogPopUp {
+    background: #ced7e0 none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+    height: 80%;
+    left: 21px;
+    padding: 10px;
+    position: absolute;
+    top: 51px;
+    width: 97%;
+    z-index: 2000;
+}
+#DialogPopUp p {
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.cancelar, #DialogPopUp button#ok {
+    background: #01a8d9 none repeat scroll 0 0;
+    border: medium none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    cursor: pointer;
+    float: left;
+    font-family: "Roboto Condensed",sans-serif !important;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.cancelar {
+    background: #c2b213 none repeat scroll 0 0;
+    color: #fff !important;
+    display: block;
+    font-family: "Roboto Condensed",sans-serif !important;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    position: absolute;
+    right: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 17px;
+}
+.cancelar:hover {
+    text-decoration: none;
+}
+#DialogPopUp button#ok {
+    background: red none repeat scroll 0 0;
+    display: none;
+    margin-left: 37%;
+}
+#DialogPopUp nav {
+    bottom: 2px;
+    height: 48px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 0;
+    width: 18%;
+}
+.modal-header h4 {
+    color: #333;
+}
+.menuPrincipalBg {
+    background: rgba(0, 0, 0, 0) url("shadow1.png") no-repeat scroll center 38px;
+    height: 67px;
+    position: relative;
+    z-index: 2000;
+}
+
+html, body {
+    border: 0;
+    margin: 0;
+}
+
+#menuPrincipal {
+    border-bottom: 2px solid #ffd400;
+    height: 44px;
+    position: fixed;
+    width: 100%;
+    z-index: 1500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    top: 0;
+}
+
+#menuPrincipal #logoPrincipal {
+    float: left;
+}
+
+#menuPrincipal ul#main {
+    float: left;
+    width: 87%;
+    position: absolute;
+    left: 128px;
+    top: 6px;
+}
+
+#menuPrincipal ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    z-index: 900;
+}
+
+#menuPrincipal ul a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0 15px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+#menuPrincipal ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#menuPrincipal ul li.current-menu-item {
+    background: #ddd;
+}
+
+#menuPrincipal ul li:hover {
+    background: #ced7e0;
+}
+
+#menuPrincipal ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 0;
+}
+
+#menuPrincipal ul ul li {
+    float: none;
+    width: 200px
+}
+
+#menuPrincipal ul ul a {
+    line-height: 120%;
+    padding: 10px 15px
+}
+
+#menuPrincipal ul ul ul {
+    top: 0;
+    left: 100%
+}
+
+#menuPrincipal ul li:hover > ul {
+    display: block;
+}
+
+#conteudo {
+    margin-top: 0px;
+}
+.mainContainer {
+    padding: 0 20px 20px;
+}
+.logoPrincipal {
+    border-radius: 0;
+    height: 37px !important;
+    max-height: 37px !important;
+    padding: 1px 10px 1px 8px;
+}
+.logoPrincipal img {
+    margin-top: -5px;
+}
+#qtdPontos {
+    background: #dff0d8 none repeat scroll 0 0;
+    border-bottom: 3px solid #3c763d;
+    color: #3c763d;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: auto;
+}
+table {
+    float: left;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+table .col1 {
+    width: 100px;
+}
+#frmConsultar {
+    height: 512px;
+    margin: auto;
+    padding: 5px;
+    position: relative;
+    top: 50px;
+    width: 627px;
+}
+#frmConsultar h2 {
+    float: left;
+    font-size: 25px;
+    margin-bottom: 7px;
+    width: 100%;
+}
+#frmConsultar h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#frmConsultar label {
+    float: left;
+    font-size: 16px;
+    margin-top: 7px;
+    width: 100%;
+}
+#frmConsultar input {
+    background: #fbfbfb none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    float: left;
+    font-size: 24px;
+    padding: 5px;
+    text-align: center;
+    width: 68px;
+}
+#btnConsultar {
+    float: right;
+    height: 49px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+}
+#qtdPontos {
+    display: none;
+    font-size: 51px;
+    margin-top: -13px;
+    text-align: center;
+}
+#btnConfirmar {
+    display: none;
+    margin-top: 0;
+    width: 100% !important;
+}
+#preload {
+    background: #f9f9f9 url("images/preload/scr_01.gif") no-repeat scroll center center !important;
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1500;
+}
+#preload h1 {
+    color: #179c8c;
+    font-family: "Raleway",sans-serif;
+    font-size: 38px;
+    font-weight: 200;
+    letter-spacing: -1px;
+    margin: auto;
+    position: relative;
+    text-transform: uppercase;
+    top: 20%;
+    width: 998px;
+}
+#preload h2 {
+    color: #777;
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: auto;
+    position: relative;
+    top: 21%;
+    width: 998px;
+}
+#preload #progressBar {
+    color: #179c8c;
+    font-size: 36px;
+    height: 30px;
+    left: 50%;
+    margin-left: -271px;
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    width: 500px;
+}
+#preload .progress {
+    height: 30px;
+    width: 100%;
+}
+#preload2{
+    display: none;
+    position: absolute; z-index: 1500; left: 0; top: 0; width: 100%; height: 100%;
+    /*background: url(images/opacity.png)*/
+    background: #fff;
+}
+#preload2 span{
+    position: absolute; left: 47%; top: 40%;
+}
+
+#modal .modal-dialog {
+    margin-top: 5%;
+}
+.bs-callout-info h4 {
+    color: #1b809e;
+    font-size: 18px;
+}
+.bs-callout-info {
+    border-left: 3px solid #1b809e;
+    padding: 12px;
+}
+.bs-callout h4 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+#btnClose {
+    bottom: 0;
+    position: relative;
+}
+
+html, body {
+    font: 100 100%/1 "Roboto", sans-serif;
+    position: relative;
+    height: 100%;
+    /*background: rgba(0, 0, 0, 0) url("system/bg.jpg") 100%/100%;*/
+    /*background: #ced7e0;*/
+}
+
+form div {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+form label {
+     display: block;
+     position: relative;
+     top: 13px;
+    font-size: 14px;
+ }

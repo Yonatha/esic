@@ -1,0 +1,42 @@
+version: "2"
+services:
+  esic_db:
+    image: mariadb
+    container_name: esic_db
+    network_mode: bridge
+    ports:
+      - "3306:3306"
+    volumes_from:
+      - esic_dbdata
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: string
+  esic_dbdata:
+    container_name: esic_dbdata
+    image: tianon/true
+    volumes:
+      - /var/lib/mysql
+  esic_app:
+    container_name: esic_app
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    environment:
+      - RAILS_PORT=3000
+      - DB_USERNAME=root
+      - DB_PASSWORD=123456
+      - DB_HOST=esic_db
+      - RAILS_ENV=development
+    network_mode: bridge
+    ports:
+      - '3000:3000'
+    volumes_from:
+      - esic_appdata
+    links:
+      - "esic_db"
+
+  esic_appdata:
+    image: tianon/true
+    container_name: esic_appdata
+    network_mode: bridge
+    volumes:
+      - ".:/workspace"

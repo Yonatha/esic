@@ -1,0 +1,323 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);*/
+
+html {
+    background-image: url('system/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+#loginForm {
+    position: fixed;
+    top: 14%;
+    left: 13%;
+}
+/* HEADER */
+.custom-header {
+
+    height: 85px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.logo-unipe-topbar-header {
+
+    width: 224px;
+    height: 80px;
+    background: transparent url('logo_large.png') no-repeat top left;
+    display: inline;
+    position: absolute;
+
+    left: 0;
+    margin: 0;
+
+    top: 0;
+
+}
+
+.reset-background {
+    background: none !Important;
+}
+
+.set-style-box {
+
+    height: 300px;
+    background: #f2f2f2;
+    padding-top: 15px;
+
+}
+
+.set-max-row {
+    max-width: 95%;
+}
+
+.set-styles-label {
+    font-size: 13pt;
+}
+
+.set-margin-top {
+    margin-top: 8px;
+}
+
+.set-bold {
+    font-weight: bold;
+}
+
+/* REGRAS PARA O MENU DO CABE�ALHO */
+.top-bar-section ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    line-height: 100px;
+    background: none !important;
+}
+
+.top-bar-section ul li {
+
+    display: inline;
+    border-right: 1px solid #1373a7;
+
+}
+
+.top-bar-section ul li:first-child {
+    border-left: 1px solid #1373a7;
+}
+
+.top-bar-section ul li a {
+
+    height: 100px;
+    line-height: 100px;
+    background: #01a8d9 !important;
+    padding: 30px !important;
+}
+
+.top-bar-section ul li a:hover {
+
+    background: #0e3c5d !important;
+
+}
+
+/* REGRAS PARA TABELAS */
+.table-form {
+
+    width: 100%;
+    background: yellow;
+}
+
+.first-column {
+    width: 100%;
+}
+
+.second-column {
+    width: 100%;
+}
+
+.first-colum
+select, label {
+    margin-bottom: 0 !Important;
+}
+
+.reset-padding-top {
+    padding-top: 0 !important;
+}
+
+/* REGRA PARA CAMPOS DE FORMUL�RIOS
+/* INPUT TYPE BUTTON */
+
+input[type=button] {
+
+    background: #2ba6cb;
+    border: none;
+    color: #fff;
+    height: 50px;
+    padding: 1.0625rem 2rem 1rem;
+    cursor: pointer;
+
+}
+
+.set-styles-button:hover {
+    background: #01a8d9;
+}
+
+.set-styles-textbox {
+
+    height: 50px !important;
+    margin-top: 0;
+    margin-bottom: 0 !important;
+
+}
+
+.set-footer {
+
+    width: 100%;
+
+    position: absolute !important;
+    bottom: 0;
+    padding: 2% 0;
+    text-align: center;
+
+}
+
+.set-line-height {
+
+    height: auto;
+    line-height: auto;
+}
+
+.set-float-left {
+    float: left;
+}
+
+.set-float-right {
+    float: right;
+}
+
+.title-footer {
+
+    color: #fff;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+
+}
+
+#principal {
+    margin: 2%;
+}
+
+.box-centered {
+
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+
+}
+
+.ui-panelgrid .ui-widget TABLE TD {
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+table.ui-panelgrid {
+    width: 100%;
+}
+
+table.ui-panelgrid tr td {
+
+    padding: 8px !important;
+
+}
+
+table.ui-panelgrid tr td:first-child {
+    width: 10% !important;
+}
+
+table.ui-panelgrid tr td:first-child + td {
+    width: 20% !important;
+}
+
+
+button {
+
+    background: #01a8d9 !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    padding: 8px !important;
+    margin: 5px !important;
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+
+}
+
+input[type="submit"] {
+
+    width: 120px !important;
+
+}
+
+.ui-datatable {
+
+    width: 100% !important;
+    margin: 15px 0;
+}
+
+.logo-sisbolsas {
+
+    width: 98%;
+    text-transform: uppercase;
+    font-size: 18pt;
+    line-height: 1.2em;
+    margin-bottom: 0;
+    color: #01a8d9;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.table-forms {
+
+    width: 400px;
+    border-radius: 7px;
+
+}
+
+#principal ul {
+    list-style-type: disc;
+}
+
+#principal ul li {
+    font-style: italic;
+}
+
+#formPrincipal h4, h3 {
+    font-weight: bold;
+}
+
+input, select {
+
+    margin-bottom: 0 !important;
+    box-shadow: none !important;
+
+}
+
+input[type="submit"] {
+    margin: 15px 0px !important
+}
+
+.ui-inputfield {
+    width: 40% !important;
+}
+
+.ui-panelgrid-cell .ui-inputfield {
+    width: 60% !important
+}
+
+.ui-panelgrid-cell select {
+    width: 40% !important;
+}
+
+.ui-panelgrid-cell input {
+    width: 30% !important
+}
+
+.lista-protocolo {
+
+    list-style-type: none !important;
+
+}
+
+.renda {
+    display: block;
+    font-weight: bold;
+    margin: 5px 0;
+}

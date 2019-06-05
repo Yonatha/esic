@@ -1,0 +1,20 @@
+production:
+  adapter: mysql2
+  username: <%= ENV.fetch('DB_USERNAME') { 'user' } %>
+  password: <%= ENV.fetch('DB_PASSWORD') { 'password' } %>
+  host: <%= ENV.fetch('DB_HOST') { 'localhost' } %>
+  database: esic_production
+
+development:
+  adapter: mysql2
+  username: <%= ENV.fetch('DB_USERNAME') { 'user' } %>
+  password: <%= ENV.fetch('DB_PASSWORD') { 'password' } %>
+  host: <%= ENV.fetch('DB_HOST') { 'localhost' } %>
+  database: esic_development
+
+test:
+  adapter: mysql2
+  username: <%= ENV.fetch('DB_USERNAME') { 'user' } %>
+  password: <%= ENV.fetch('DB_PASSWORD') { 'password' } %>
+  host: <%= ENV.fetch('DB_HOST') { 'localhost' } %>
+  database: esic_test
